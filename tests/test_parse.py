@@ -7,4 +7,5 @@ __license__ = "mit"
 
 
 def test_parse_args():
-    pass
+    assert(parse_args(["-l", "tests/fake.txt"]).load[0] == 'tests/fake.txt')
+    assert(parse_args(["-l", "tests/fake.txt", "tests/test1.sl"]).load[0] == 'tests/fake.txt')
