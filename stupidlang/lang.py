@@ -47,7 +47,7 @@ def parse_args(args):
         '-v',
         '--version',
         action='version',
-        version='stupidlang {ver}'.format(ver='0.0.0'))
+        version='stupidlang {ver}'.format(ver=__version__))
     parser.add_argument(
         '-i',
         '--interactive',
